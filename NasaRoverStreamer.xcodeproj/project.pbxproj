@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F83C58A22723195F004DADF2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83C58A12723195F004DADF2 /* NetworkService.swift */; };
+		F84C60302722988300F602E4 /* NasaRoverStreamerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C602F2722988300F602E4 /* NasaRoverStreamerApp.swift */; };
+		F84C60322722988300F602E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84C60312722988300F602E4 /* ContentView.swift */; };
+		F84C60342722988400F602E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F84C60332722988400F602E4 /* Assets.xcassets */; };
+		F84C60372722988400F602E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F84C60362722988400F602E4 /* Preview Assets.xcassets */; };
+		F859B23A272469F5007AA53A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F859B239272469F5007AA53A /* Alamofire */; };
+		F859B23F27246C4C007AA53A /* RoverType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859B23E27246C4C007AA53A /* RoverType.swift */; };
+		F859B24127246CE1007AA53A /* PhotoRequestResponseDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859B24027246CE1007AA53A /* PhotoRequestResponseDao.swift */; };
+		F859B24427247050007AA53A /* MainRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859B24327247050007AA53A /* MainRepository.swift */; };
+		F859B246272472E1007AA53A /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859B245272472E1007AA53A /* PhotoModel.swift */; };
+		F859B24827247352007AA53A /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859B24727247352007AA53A /* CameraModel.swift */; };
+		F859B24A272473D4007AA53A /* RoverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859B249272473D4007AA53A /* RoverModel.swift */; };
+		F859B24E2724862D007AA53A /* RoverTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859B24D2724862D007AA53A /* RoverTypeView.swift */; };
+		F859B25027248706007AA53A /* PhotoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859B24F27248706007AA53A /* PhotoDetailView.swift */; };
+		F859B25227248E05007AA53A /* RoverPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = F859B25127248E05007AA53A /* RoverPhoto.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F83C58A12723195F004DADF2 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F84C602C2722988300F602E4 /* NasaRoverStreamer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NasaRoverStreamer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F84C602F2722988300F602E4 /* NasaRoverStreamerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NasaRoverStreamerApp.swift; sourceTree = "<group>"; };
+		F84C60312722988300F602E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F84C60332722988400F602E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F84C60362722988400F602E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F859B23E27246C4C007AA53A /* RoverType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverType.swift; sourceTree = "<group>"; };
+		F859B24027246CE1007AA53A /* PhotoRequestResponseDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoRequestResponseDao.swift; sourceTree = "<group>"; };
+		F859B24327247050007AA53A /* MainRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRepository.swift; sourceTree = "<group>"; };
+		F859B245272472E1007AA53A /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		F859B24727247352007AA53A /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
+		F859B249272473D4007AA53A /* RoverModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverModel.swift; sourceTree = "<group>"; };
+		F859B24B27247F4C007AA53A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F859B24D2724862D007AA53A /* RoverTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverTypeView.swift; sourceTree = "<group>"; };
+		F859B24F27248706007AA53A /* PhotoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailView.swift; sourceTree = "<group>"; };
+		F859B25127248E05007AA53A /* RoverPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoverPhoto.swift; sourceTree = "<group>"; };
+		F8D178EC272840EB008601BD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F84C60292722988300F602E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F859B23A272469F5007AA53A /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F84C60232722988300F602E4 = {
+			isa = PBXGroup;
+			children = (
+				F84C602E2722988300F602E4 /* NasaRoverStreamer */,
+				F84C602D2722988300F602E4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F84C602D2722988300F602E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F84C602C2722988300F602E4 /* NasaRoverStreamer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F84C602E2722988300F602E4 /* NasaRoverStreamer */ = {
+			isa = PBXGroup;
+			children = (
+				F8D178EC272840EB008601BD /* README.md */,
+				F859B24B27247F4C007AA53A /* Info.plist */,
+				F84C602F2722988300F602E4 /* NasaRoverStreamerApp.swift */,
+				F84C60332722988400F602E4 /* Assets.xcassets */,
+				F859B24227247040007AA53A /* Repository */,
+				F859B23D27246C41007AA53A /* Network */,
+				F859B23C27246C3A007AA53A /* Model */,
+				F859B23B27246C35007AA53A /* View */,
+				F84C60352722988400F602E4 /* Preview Content */,
+			);
+			path = NasaRoverStreamer;
+			sourceTree = "<group>";
+		};
+		F84C60352722988400F602E4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F84C60362722988400F602E4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F859B23B27246C35007AA53A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F84C60312722988300F602E4 /* ContentView.swift */,
+				F859B24C2724860B007AA53A /* Common */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F859B23C27246C3A007AA53A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F859B23E27246C4C007AA53A /* RoverType.swift */,
+				F859B245272472E1007AA53A /* PhotoModel.swift */,
+				F859B24727247352007AA53A /* CameraModel.swift */,
+				F859B249272473D4007AA53A /* RoverModel.swift */,
+				F859B24027246CE1007AA53A /* PhotoRequestResponseDao.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F859B23D27246C41007AA53A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F83C58A12723195F004DADF2 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F859B24227247040007AA53A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F859B24327247050007AA53A /* MainRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F859B24C2724860B007AA53A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F859B24D2724862D007AA53A /* RoverTypeView.swift */,
+				F859B24F27248706007AA53A /* PhotoDetailView.swift */,
+				F859B25127248E05007AA53A /* RoverPhoto.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F84C602B2722988300F602E4 /* NasaRoverStreamer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F84C603A2722988400F602E4 /* Build configuration list for PBXNativeTarget "NasaRoverStreamer" */;
+			buildPhases = (
+				F84C60282722988300F602E4 /* Sources */,
+				F84C60292722988300F602E4 /* Frameworks */,
+				F84C602A2722988300F602E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NasaRoverStreamer;
+			packageProductDependencies = (
+				F859B239272469F5007AA53A /* Alamofire */,
+			);
+			productName = NasaRoverStreamer;
+			productReference = F84C602C2722988300F602E4 /* NasaRoverStreamer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F84C60242722988300F602E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					F84C602B2722988300F602E4 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = F84C60272722988300F602E4 /* Build configuration list for PBXProject "NasaRoverStreamer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F84C60232722988300F602E4;
+			packageReferences = (
+				F859B238272469F5007AA53A /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = F84C602D2722988300F602E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F84C602B2722988300F602E4 /* NasaRoverStreamer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F84C602A2722988300F602E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84C60372722988400F602E4 /* Preview Assets.xcassets in Resources */,
+				F84C60342722988400F602E4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F84C60282722988300F602E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84C60322722988300F602E4 /* ContentView.swift in Sources */,
+				F84C60302722988300F602E4 /* NasaRoverStreamerApp.swift in Sources */,
+				F859B24827247352007AA53A /* CameraModel.swift in Sources */,
+				F859B25227248E05007AA53A /* RoverPhoto.swift in Sources */,
+				F859B24127246CE1007AA53A /* PhotoRequestResponseDao.swift in Sources */,
+				F859B24A272473D4007AA53A /* RoverModel.swift in Sources */,
+				F859B23F27246C4C007AA53A /* RoverType.swift in Sources */,
+				F859B24427247050007AA53A /* MainRepository.swift in Sources */,
+				F83C58A22723195F004DADF2 /* NetworkService.swift in Sources */,
+				F859B246272472E1007AA53A /* PhotoModel.swift in Sources */,
+				F859B24E2724862D007AA53A /* RoverTypeView.swift in Sources */,
+				F859B25027248706007AA53A /* PhotoDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F84C60382722988400F602E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F84C60392722988400F602E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F84C603B2722988400F602E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NasaRoverStreamer/Preview Content\"";
+				DEVELOPMENT_TEAM = CUW72829WY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NasaRoverStreamer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cemugurlu.NasaRoverStreamer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F84C603C2722988400F602E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NasaRoverStreamer/Preview Content\"";
+				DEVELOPMENT_TEAM = CUW72829WY;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NasaRoverStreamer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cemugurlu.NasaRoverStreamer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F84C60272722988300F602E4 /* Build configuration list for PBXProject "NasaRoverStreamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F84C60382722988400F602E4 /* Debug */,
+				F84C60392722988400F602E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F84C603A2722988400F602E4 /* Build configuration list for PBXNativeTarget "NasaRoverStreamer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F84C603B2722988400F602E4 /* Debug */,
+				F84C603C2722988400F602E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F859B238272469F5007AA53A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F859B239272469F5007AA53A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F859B238272469F5007AA53A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F84C60242722988300F602E4 /* Project object */;
+}
